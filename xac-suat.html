@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xác suất & Thống kê | 12Maths</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">12Maths</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ham-so.html" class="nav-link">Hàm số</a>
+        <a href="tich-phan.html" class="nav-link">Tích phân</a>
+        <a href="so-phuc.html" class="nav-link">Số phức</a>
+        <a href="hinh-hoc.html" class="nav-link">Hình học</a>
+        <a href="xac-suat.html" class="nav-link active">Xác suất</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Xác suất & Thống kê</h1>
+        <p>Xác suất có điều kiện, công thức Bayes và biến ngẫu nhiên rời rạc.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content-card">
+          <h2>1. Xác suất cổ điển</h2>
+          <div class="formula-box">
+            P(A) = n(A) / n(Ω)
+          </div>
+          <p>Trong đó n(A) là số kết quả thuận lợi, n(Ω) là số kết quả có thể.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>2. Xác suất có điều kiện</h2>
+          <div class="formula-box">
+            P(A|B) = P(A ∩ B) / P(B) &nbsp;&nbsp; (P(B) > 0)
+          </div>
+          <p>Hai biến cố độc lập khi P(A ∩ B) = P(A) · P(B).</p>
+        </div>
+
+        <div class="content-card">
+          <h2>3. Công thức Bayes & Xác suất toàn phần</h2>
+          <div class="formula-box">
+            P(A<sub>i</sub>|B) = [P(B|A<sub>i</sub>) · P(A<sub>i</sub>)] / Σ P(B|A<sub>k</sub>) · P(A<sub>k</sub>)
+          </div>
+          <p>Dùng khi có nhiều giả thuyết và quan sát được kết quả B.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>4. Biến ngẫu nhiên rời rạc</h2>
+          <ul>
+            <li>Bảng phân phối xác suất.</li>
+            <li>Kỳ vọng: E(X) = Σ x<sub>i</sub> · p<sub>i</sub></li>
+            <li>Phương sai: D(X) = E(X²) − [E(X)]²</li>
+            <li>Độ lệch chuẩn: σ = √D(X)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">∑</span> 12Maths
+        </div>
+        <p>© 2026 12Maths — Website học Toán lớp 12</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

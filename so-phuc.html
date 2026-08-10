@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Số phức | 12Maths</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">12Maths</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ham-so.html" class="nav-link">Hàm số</a>
+        <a href="tich-phan.html" class="nav-link">Tích phân</a>
+        <a href="so-phuc.html" class="nav-link active">Số phức</a>
+        <a href="hinh-hoc.html" class="nav-link">Hình học</a>
+        <a href="xac-suat.html" class="nav-link">Xác suất</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Số phức</h1>
+        <p>Dạng đại số, dạng lượng giác và các phép toán trên số phức.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content-card">
+          <h2>1. Dạng đại số</h2>
+          <p>Số phức z có dạng:</p>
+          <div class="formula-box">
+            z = a + bi &nbsp;&nbsp; (a, b ∈ ℝ, i² = −1)
+          </div>
+          <ul>
+            <li>a = Re(z): phần thực</li>
+            <li>b = Im(z): phần ảo</li>
+            <li>Số phức liên hợp: z̄ = a − bi</li>
+            <li>Modun: |z| = √(a² + b²)</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h2>2. Phép toán cơ bản</h2>
+          <ul>
+            <li>Cộng: (a+bi) + (c+di) = (a+c) + (b+d)i</li>
+            <li>Nhân: (a+bi)(c+di) = (ac−bd) + (ad+bc)i</li>
+            <li>Chia: nhân cả tử và mẫu với liên hợp của mẫu.</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h2>3. Dạng lượng giác</h2>
+          <div class="formula-box">
+            z = r (cos θ + i sin θ)
+          </div>
+          <p>Trong đó r = |z|, θ = arg(z).</p>
+          <h3>Công thức Moivre</h3>
+          <div class="formula-box">
+            [r (cos θ + i sin θ)]ⁿ = rⁿ (cos nθ + i sin nθ)
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h2>4. Phương trình số phức</h2>
+          <p>Giải phương trình dạng zⁿ = a + bi bằng cách chuyển sang dạng lượng giác và dùng công thức căn bậc n.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">∑</span> 12Maths
+        </div>
+        <p>© 2026 12Maths — Website học Toán lớp 12</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

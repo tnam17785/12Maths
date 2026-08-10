@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hình học không gian | 12Maths</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">12Maths</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ham-so.html" class="nav-link">Hàm số</a>
+        <a href="tich-phan.html" class="nav-link">Tích phân</a>
+        <a href="so-phuc.html" class="nav-link">Số phức</a>
+        <a href="hinh-hoc.html" class="nav-link active">Hình học</a>
+        <a href="xac-suat.html" class="nav-link">Xác suất</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Hình học không gian</h1>
+        <p>Khối đa diện, mặt cầu, quan hệ song song – vuông góc và tính thể tích.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content-card">
+          <h2>1. Quan hệ song song & vuông góc</h2>
+          <ul>
+            <li>Đường thẳng song song với mặt phẳng.</li>
+            <li>Hai mặt phẳng song song.</li>
+            <li>Đường thẳng vuông góc với mặt phẳng.</li>
+            <li>Hai mặt phẳng vuông góc.</li>
+          </ul>
+          <div class="note">
+            Nhớ định lý về đường thẳng và mặt phẳng vuông góc, định lý ba đường vuông góc.
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h2>2. Khối đa diện</h2>
+          <h3>Thể tích các khối cơ bản</h3>
+          <ul>
+            <li>Lăng trụ: V = S<sub>đáy</sub> · h</li>
+            <li>Hình hộp chữ nhật: V = a · b · c</li>
+            <li>Hình chóp: V = (1/3) S<sub>đáy</sub> · h</li>
+            <li>Hình chóp cụt: V = (h/3)(S + S' + √(S·S'))</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h2>3. Mặt cầu</h2>
+          <div class="formula-box">
+            Phương trình: (x−a)² + (y−b)² + (z−c)² = R²
+          </div>
+          <ul>
+            <li>Diện tích mặt cầu: S = 4πR²</li>
+            <li>Thể tích khối cầu: V = (4/3)πR³</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h2>4. Góc và khoảng cách</h2>
+          <p>Góc giữa đường thẳng và mặt phẳng, góc giữa hai mặt phẳng, khoảng cách từ điểm đến mặt phẳng, khoảng cách giữa hai đường thẳng chéo nhau.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">∑</span> 12Maths
+        </div>
+        <p>© 2026 12Maths — Website học Toán lớp 12</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
