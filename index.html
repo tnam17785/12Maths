@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12Maths | Toán 12 - Học Toán Thông Minh</title>
+  <meta name="description" content="Website học Toán lớp 12 với giao diện hiện đại, nội dung đầy đủ các chuyên đề quan trọng.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">12Maths</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link active">Trang chủ</a>
+        <a href="ham-so.html" class="nav-link">Hàm số</a>
+        <a href="tich-phan.html" class="nav-link">Tích phân</a>
+        <a href="so-phuc.html" class="nav-link">Số phức</a>
+        <a href="hinh-hoc.html" class="nav-link">Hình học</a>
+        <a href="xac-suat.html" class="nav-link">Xác suất</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="gradient-text">Toán 12</span>
+            <br>Học thông minh, thi tự tin
+          </h1>
+          <p class="hero-desc">
+            Tổng hợp kiến thức Toán lớp 12 theo chương trình GDPT 2018. 
+            Giao diện đẹp, nội dung rõ ràng, dễ mở rộng thêm nhiều chuyên đề.
+          </p>
+          <div class="hero-actions">
+            <a href="ham-so.html" class="btn btn-primary">Bắt đầu học</a>
+            <a href="#topics" class="btn btn-outline">Xem chuyên đề</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="math-card">
+            <div class="formula">f'(x) = lim<sub>h→0</sub> <span class="frac">f(x+h) − f(x)</span><span class="frac-line">h</span></div>
+            <div class="formula-label">Định nghĩa đạo hàm</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="topics" class="topics">
+      <div class="container">
+        <h2 class="section-title">Chuyên đề Toán 12</h2>
+        <p class="section-subtitle">Chọn chủ đề bạn muốn ôn luyện</p>
+        <div class="topics-grid">
+          <a href="ham-so.html" class="topic-card">
+            <div class="topic-icon">📈</div>
+            <h3>Hàm số & Đạo hàm</h3>
+            <p>Khảo sát hàm số, cực trị, tiệm cận, ứng dụng đạo hàm.</p>
+          </a>
+          <a href="tich-phan.html" class="topic-card">
+            <div class="topic-icon">∫</div>
+            <h3>Tích phân</h3>
+            <p>Nguyên hàm, tích phân xác định, ứng dụng tính diện tích và thể tích.</p>
+          </a>
+          <a href="so-phuc.html" class="topic-card">
+            <div class="topic-icon">ℂ</div>
+            <h3>Số phức</h3>
+            <p>Dạng đại số, dạng lượng giác, phương trình số phức.</p>
+          </a>
+          <a href="hinh-hoc.html" class="topic-card">
+            <div class="topic-icon">📐</div>
+            <h3>Hình học không gian</h3>
+            <p>Khối đa diện, mặt cầu, thể tích, quan hệ song song & vuông góc.</p>
+          </a>
+          <a href="xac-suat.html" class="topic-card">
+            <div class="topic-icon">🎲</div>
+            <h3>Xác suất & Thống kê</h3>
+            <p>Xác suất có điều kiện, công thức Bayes, biến ngẫu nhiên.</p>
+          </a>
+          <div class="topic-card coming-soon">
+            <div class="topic-icon">+</div>
+            <h3>Thêm trang mới</h3>
+            <p>Chỉ cần tạo file HTML mới và thêm link vào menu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Tại sao chọn 12Maths?</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <h3>Giao diện hiện đại</h3>
+            <p>Nền chuyển động mượt mà, màu sắc chuyên nghiệp, dễ nhìn trên mọi thiết bị.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <h3>Dễ mở rộng</h3>
+            <p>Cấu trúc tĩnh rõ ràng. Thêm trang mới chỉ cần tạo file HTML và cập nhật menu.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <h3>Tối ưu học tập</h3>
+            <p>Nội dung tập trung, công thức đẹp, phù hợp ôn thi tốt nghiệp và đại học.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">∑</span> 12Maths
+        </div>
+        <p>© 2026 12Maths — Website học Toán lớp 12</p>
+        <p class="footer-note">Repo GitHub Pages sẵn sàng mở rộng</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
