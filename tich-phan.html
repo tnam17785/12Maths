@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tích phân | 12Maths</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">12Maths</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ham-so.html" class="nav-link">Hàm số</a>
+        <a href="tich-phan.html" class="nav-link active">Tích phân</a>
+        <a href="so-phuc.html" class="nav-link">Số phức</a>
+        <a href="hinh-hoc.html" class="nav-link">Hình học</a>
+        <a href="xac-suat.html" class="nav-link">Xác suất</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Tích phân</h1>
+        <p>Nguyên hàm, tích phân xác định và ứng dụng tính diện tích, thể tích.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content-card">
+          <h2>1. Nguyên hàm</h2>
+          <p>Hàm F(x) được gọi là nguyên hàm của f(x) trên (a;b) nếu F'(x) = f(x) với mọi x ∈ (a;b).</p>
+          <div class="formula-box">
+            ∫ f(x) dx = F(x) + C
+          </div>
+          <h3>Một số nguyên hàm cơ bản</h3>
+          <ul>
+            <li>∫ xⁿ dx = xⁿ⁺¹/(n+1) + C (n ≠ −1)</li>
+            <li>∫ 1/x dx = ln|x| + C</li>
+            <li>∫ eˣ dx = eˣ + C</li>
+            <li>∫ sin x dx = −cos x + C</li>
+            <li>∫ cos x dx = sin x + C</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h2>2. Tích phân xác định</h2>
+          <div class="formula-box">
+            ∫<sub>a</sub><sup>b</sup> f(x) dx = F(b) − F(a)
+          </div>
+          <p>Trong đó F là một nguyên hàm của f.</p>
+          <div class="note">
+            <strong>Tính chất:</strong> ∫<sub>a</sub><sup>b</sup> = −∫<sub>b</sub><sup>a</sup> và ∫<sub>a</sub><sup>a</sup> = 0.
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h2>3. Phương pháp tính tích phân</h2>
+          <ul>
+            <li><strong>Đổi biến số:</strong> Đặt t = u(x), dx = dt / u'(x).</li>
+            <li><strong>Tích phân từng phần:</strong> ∫ u dv = uv − ∫ v du.</li>
+          </ul>
+        </div>
+
+        <div class="content-card">
+          <h2>4. Ứng dụng</h2>
+          <ul>
+            <li>Tính diện tích hình phẳng giới hạn bởi các đường cong.</li>
+            <li>Tính thể tích khối tròn xoay.</li>
+            <li>Tính quãng đường, công... trong vật lý.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">∑</span> 12Maths
+        </div>
+        <p>© 2026 12Maths — Website học Toán lớp 12</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

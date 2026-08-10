@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hàm số & Đạo hàm | 12Maths</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="overlay"></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">∑</span>
+        <span class="logo-text">12Maths</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ham-so.html" class="nav-link active">Hàm số</a>
+        <a href="tich-phan.html" class="nav-link">Tích phân</a>
+        <a href="so-phuc.html" class="nav-link">Số phức</a>
+        <a href="hinh-hoc.html" class="nav-link">Hình học</a>
+        <a href="xac-suat.html" class="nav-link">Xác suất</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Hàm số & Đạo hàm</h1>
+        <p>Khảo sát hàm số, cực trị, tiệm cận và các ứng dụng quan trọng của đạo hàm.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="content-card">
+          <h2>1. Định nghĩa đạo hàm</h2>
+          <p>Đạo hàm của hàm số y = f(x) tại điểm x₀ là:</p>
+          <div class="formula-box">
+            f'(x₀) = lim<sub>x→x₀</sub> [f(x) − f(x₀)] / (x − x₀)
+          </div>
+          <p>Nếu giới hạn tồn tại thì ta nói f khả vi tại x₀.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>2. Các quy tắc tính đạo hàm</h2>
+          <ul>
+            <li>(u ± v)' = u' ± v'</li>
+            <li>(u · v)' = u'v + uv'</li>
+            <li>(u / v)' = (u'v − uv') / v²</li>
+            <li>(uⁿ)' = n · uⁿ⁻¹ · u'</li>
+            <li>(eᵘ)' = eᵘ · u'</li>
+            <li>(ln u)' = u' / u</li>
+          </ul>
+          <div class="note">
+            <strong>Lưu ý:</strong> Luôn nhớ đạo hàm của hàm hợp và quy tắc dây chuyền.
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h2>3. Khảo sát hàm số</h2>
+          <h3>Các bước cơ bản</h3>
+          <ol>
+            <li>Tìm tập xác định.</li>
+            <li>Tính y' và tìm điểm cực trị.</li>
+            <li>Tìm tiệm cận (nếu có).</li>
+            <li>Lập bảng biến thiên.</li>
+            <li>Vẽ đồ thị.</li>
+          </ol>
+          <h3>Hàm bậc ba</h3>
+          <div class="formula-box">
+            y = ax³ + bx² + cx + d (a ≠ 0)
+          </div>
+          <p>Đạo hàm y' = 3ax² + 2bx + c. Xét Δ để xác định cực trị.</p>
+        </div>
+
+        <div class="content-card">
+          <h2>4. Ứng dụng</h2>
+          <ul>
+            <li>Tìm cực trị hàm số.</li>
+            <li>Tìm khoảng đồng biến, nghịch biến.</li>
+            <li>Giải phương trình, bất phương trình bằng đạo hàm.</li>
+            <li>Bài toán thực tế (tối ưu hóa).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">∑</span> 12Maths
+        </div>
+        <p>© 2026 12Maths — Website học Toán lớp 12</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
